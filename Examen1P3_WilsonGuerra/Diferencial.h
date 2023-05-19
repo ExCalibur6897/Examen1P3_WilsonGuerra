@@ -1,11 +1,11 @@
-#pragma once
-#include <iostream>
+#ifndef DIFERENCIAL_H
+#define DIFERENCIAL_H
 
-using namespace std;
-class Diferencial
-{
-	Diferencial(){
-		float aceleracion;
-	}
+class Diferencial {
+public:
+    float aceleracion;
+
+    Diferencial(float aceleracion);
 };
 
+#endif

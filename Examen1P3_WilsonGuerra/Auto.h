@@ -1,26 +1,28 @@
-#pragma once
-#include <iostream>
-#include "CajaDeCambios.h"
-#include "Neumaticos.h"
-#include "Radiador.h"
-#include "Diferencial.h"
+#ifndef AUTO_H
+#define AUTO_H
+
+#include <string>
 #include "Ciguenal.h"
+#include "Radiador.h"
+#include "Neumaticos.h"
+#include "Diferencial.h"
+#include "CajaDeCambios.h"
 
-using namespace std;
+class Auto {
+public:
+    std::string marca;
+    std::string modelo;
+    int velMax;
+    int caballosFuerza;
+    float aceleracion;
+    Ciguenal* c;
+    Radiador* r;
+    Neumaticos* n;
+    Diferencial* d;
+    CajaDeCambios* cdc;
 
-class Auto
-{
-	Auto() {
-		string marca;
-		string modelo;
-		int velMax;
-		int caballosFuerza;
-		float aceleracion;
-		Ciguenal* c;
-		Radiador* r;
-		Neumaticos* n;
-		CajaDeCambios* ca;
-		Diferencial* d;
-	}
+    Auto(std::string marca, std::string modelo, int velMax, int caballosFuerza, float aceleracion);
+    ~Auto();
 };
 
+#endif

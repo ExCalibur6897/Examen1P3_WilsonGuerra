@@ -1,12 +1,12 @@
-#pragma once
-#include <iostream>
+#ifndef CAJADECAMBIOS_H
+#define CAJADECAMBIOS_H
 
-using namespace std;
+class CajaDeCambios {
+public:
+    float aceleracion;
+    int velMax;
 
-class CajaDeCambios
-{
-	CajaDeCambios() {
-		int velMax;
-		float aceleracion;
-	}
+    CajaDeCambios(float aceleracion, int velMax);
 };
+
+#endif

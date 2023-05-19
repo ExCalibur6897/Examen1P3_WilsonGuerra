@@ -1,12 +1,12 @@
-#pragma once
-#include <iostream>
+#ifndef CIGUENAL_H
+#define CIGUENAL_H
 
-using namespace std;
-class Ciguenal
-{
-	Ciguenal(){
-		int caballosFuerza;
-		int velMax;
-	}
+class Ciguenal {
+public:
+    int caballosFuerza;
+    int velMax;
+
+    Ciguenal(int caballosFuerza, int velMax);
 };
 
+#endif

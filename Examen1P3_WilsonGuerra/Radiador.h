@@ -1,11 +1,11 @@
-#pragma once
-#include <iostream>
+#ifndef RADIADOR_H
+#define RADIADOR_H
 
-using namespace std;
-class Radiador
-{
-	Radiador() {
-		int caballosFuerza
-	}
+class Radiador {
+public:
+    int caballosFuerza;
+
+    Radiador(int caballosFuerza);
 };
 
+#endif

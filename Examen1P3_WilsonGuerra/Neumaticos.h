@@ -1,12 +1,11 @@
-#pragma once
-#include <iostream>
+#ifndef NEUMATICOS_H
+#define NEUMATICOS_H
 
-using namespace std;
+class Neumaticos {
+public:
+    float aceleracion;
 
-class Neumaticos
-{
-	Neumaticos() {
-		float aceleracion;
-	}
+    Neumaticos(float aceleracion);
 };
 
+#endif
