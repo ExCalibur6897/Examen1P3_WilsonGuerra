@@ -1,20 +1,42 @@
-// Examen1P3_WilsonGuerra.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int opcion = 0;
+	string opcionn = "";
+	while (true) {
+		system("cls");
+		cout << "Menu Principal\n1. Need for Speed\n2. Salir del programa";
+		cout << "\nIngrese una opcion: ";
+		cin >> opcionn;
+		if (opcionn == "1")
+			opcion = 1;
+		else if (opcionn == "2")
+			opcion = 2;
+		else
+			opcion = 0;
+		switch (opcion) {
+		case 1:
+			system("cls");
+			cout << "Bienvenido a Need for Speed!\n";
+			system("pause");
+			break;
+		case 2:
+			system("cls");
+			cout << "Gracias por revisar el programa!\n";
+			system("pause");
+			system("cls");
+			cout << "Saliendo...\n";
+			system("pause");
+			return 0;
+			break;
+		default:
+			system("cls");
+			cout << "Opcion invalida!\n";
+			system("pause");
+			break;
+		}
+	}
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
